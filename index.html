@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Supabase接続テスト</title>
+</head>
+<body>
+    <h1>Supabaseテストルーム</h1>
+    <p>学校のPCから、お友達と同じ仕組みを作っています！</p>
+
+    <!-- ① Supabaseの機能を読み込む魔法のセット -->
+    <script src="https://jsdelivr.net"></script>
+
+    <script>
+      // ② ここに先ほど見つけたシンガポールの情報を貼り付けます
+      const SUPABASE_URL = 'ここに【プロジェクトのURL】を貼り付ける';
+      const SUPABASE_KEY = 'ここに【公開可能キー（anon）】を貼り付ける';
+
+      // ③ データベースと合体！
+      const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+      console.log("Supabaseの接続準備ができたよ！", supabase);
+    </script>
+</body>
+</html>
+
